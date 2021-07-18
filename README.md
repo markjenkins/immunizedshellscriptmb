@@ -22,7 +22,7 @@ https://xkcd.com/327/
 
 This implementation has not received a security audit. The choice of GNU Bash poses significant risks, a security bug could result in arbitrary shell commands being run.
 
-And additional reason to say again, use at your own risk.
+An additional reason to say again, use at your own risk.
 
 --------------------
 
