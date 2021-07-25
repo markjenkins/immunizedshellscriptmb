@@ -47,7 +47,7 @@ function processuuid {
     fi
 
     # if the response contains "isValid": true, with whatever use of whitespace
-    if grep '"isValid"\w*:\w*true'<<<$responsejson >/dev/null; then \
+    if grep '"isValid"[[:space:]]*:[[:space:]]*true'<<<$responsejson >/dev/null; then \
 	# exact firstName and lastName fields expected in a valid response
 	# (we should probably check they're there)
 	#
