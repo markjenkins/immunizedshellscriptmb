@@ -90,7 +90,9 @@ function processimmunizationcards {
 		# delegate processing an exacted immunization card UUID
 		# to another function
 		processuuid "$uuid"
+	    else echo "malformed UUID on immunization card"
 	    fi
+	else echo "malformed immunization card"
 	fi
     done;
 }
