@@ -61,9 +61,15 @@ function processuuid {
 		       <<<"$responsejson")
 
 	echo $firstName $lastName Verification successful;
+	if test -f verification_success_script.sh; then \
+	    ./verification_success_script.sh "$firstName" "$lastName"
+	fi
     # otherwise, consider verificaiton to have failed
     else \
 	echo Verification failed
+	if test -f verification_failed_script.sh; then \
+	    ./verification_failed_script.sh
+	fi
     fi
 }
 
