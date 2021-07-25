@@ -55,9 +55,9 @@ function processuuid {
 	# for example, considering the firstName to end with double quote '"'
 	# doesn't account for the fact that json has escape sequences for
 	# such things!
-	firstName=$(sed -e 's@^.*"firstName"\w*:\w*"\([^"]*\)".*$@\1@'\
+	firstName=$(sed -e 's@^.*"firstName"[[:space:]]*:[[:space:]]*"\([^"]*\)".*$@\1@'\
 			<<<"$responsejson")
-	lastName=$(sed -e 's@^.*"lastName"\w*:\w*"\([^"]*\)".*$@\1@'\
+	lastName=$(sed -e 's@^.*"lastName"[[:space:]]*:[[:space:]]*"\([^"]*\)".*$@\1@'\
 		       <<<"$responsejson")
 
 	echo $firstName $lastName Verification successful;
