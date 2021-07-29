@@ -92,6 +92,9 @@ function processimmunizationcards {
 		processuuid "$uuid"
 	    else echo "malformed UUID on immunization card"
 	    fi
+	# if there's a cue card for Alexandra to say her line in the demo
+	elif test x"$immunizationcard" = 'xQR-Code:11111'; then \
+	    ./please_card.sh;
 	else echo "malformed immunization card"
 	fi
     done;
