@@ -2,7 +2,7 @@ This is a work in progress re-implementation of the Manitoba Immunization Card v
 
 These are not the best tools for the job. Particularly for parsing JSON and working with the authentication layer.
 
-The official published Android app is 50MB. My use of a bash script, measured in kilobytes is just a goofy code golf exercise to show it can be done this way, and with an output device as simple as a teletype or speaker. It will be the basis of a demo in the form of a immunization verification "machine".
+The official published Android app is 50MB. My use of a bash script, measured in kilobytes is just a goofy code golf exercise to show it can be done this way, and with an output device as simple as a teletype and/or speaker. I have demonstrated this by constructing immunization verification "machine", Alexandra. See the demo on Youtube (https://youtu.be/94N_r7cJTqM) or the alexandra branch.
 
 This is product of reverse engineering and does not rely on an officially documented API. As such, incompatible changes are possible without notice.
 
