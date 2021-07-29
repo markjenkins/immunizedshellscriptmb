@@ -1,3 +1,5 @@
 #!/bin/bash
 
-cvlc --quiet --play-and-exit fail.aif 2>/dev/null
+cvlc --quiet --play-and-exit fail.aif 2>/dev/null &
+
+./star_printer_fail.sh
